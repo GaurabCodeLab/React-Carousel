@@ -7,7 +7,6 @@ const [index, setIndex] = useState(0);
 useEffect(()=>{
 const timer = setTimeout(()=>{
   handleNext();
-  console.log("settimeout called");
 }, 2000);
 return ()=>clearTimeout(timer);
 }, [index]);
